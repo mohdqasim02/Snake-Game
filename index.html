@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Xenxia</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="body">
+        <div class="players">
+        </div>
+        <div class="game">
+            <div id="scoreBox">Score : 0</div>
+            <div id="hiscoreBox"></div>
+            <div id="board"></div>
+        </div>
+    </div>
+
+    <!-- MODAL  -->
+    <div id="myModal" class="modal hide">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Game Over !!</h2>
+            <form action="#" onsubmit="playerData(event)">
+                <input type="text" name="player" id="player" placeholder="Your Name">
+            </form>
+            <p> Use arrow keys to move the snake <br> Press 0 to Play Again 🤞</p>
+        </div>
+    </div>
+    <div id="Modal" class="modal display">
+        <div class="modal-content">
+            <span class="close once">&times;</span>
+            <h2>Feed the Snake 🐍</h2>
+            <p> Press 'F' to enter FullScreen <br> Use arrow keys to move the snake <br> Press 0 to Start the game 🤞</p>
+        </div>
+    </div>
+</body>
+<script src="./js/script.js"></script>
+
+</html>
